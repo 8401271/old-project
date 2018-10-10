@@ -1,0 +1,100 @@
+<!doctype.html>
+  <html>
+    <head>
+      <title>Kookaburrra Travel/Home</title>
+      <link rel="stylesheet" type="text/css" href="home.CSS">
+    </head>
+
+    <header>
+      <h1> Travel placeholder</h1>
+    </header>
+
+    <body>
+    <input type="text" id="SearchBar" onkeyup="SearchBar" placeholder="Search">
+
+    <ul id="LocationsList">
+      <!-- NSW Locations-->
+      <li><a href="#">Sydney</a></li>
+      <li><a href="#">Newcastle</a></li>
+      <li><a href="#">Bathurst</a></li>
+        <!-- ACT Locations-->
+      <li><a href="#">Canberra</a></li>
+        <!-- QLD Locations-->
+      <li><a href="#">Gold Coast</a></li>
+      <li><a href="#">Brisbane</a></li>
+        <!-- VIC Locations-->
+      <li><a href="#">Melbourne</a></li>
+        <!-- SA Locations-->
+      <li><a href="#">Adelaide</a></li>
+        <!-- NT Locations-->
+      <li><a href="#">Darwin</a></li>
+      <li><a href="#">Alice Springs</a></li>
+          <!-- WA Locations-->
+      <li><a href="#">Perth</a></li>
+        <!-- TAS Locations-->
+      <li><a href="#">Hobart</a></li>
+      <li><a href="#">Launceston</a></li>
+    </ul>
+
+    <script type="text/javascript">
+
+    </script>
+    </body>
+
+    <footer>
+      <ul id="NavLinks">
+        <li> <button id="Contact us">Contact us</button> </li>
+        <li> <button id="Sign up">Sign up</button> </li>
+        <li> <button id="Promotions">Promotions</button> </li>
+        <li> <button id="About us">About us</button> </li>
+      </ul>
+    </footer>
+  </html>
+
+  <script>
+        function searchPlaceFunction() {
+          var place = document.getElementById("searchPlace").value;
+          if (place == "ACT") {
+            window.open("https://8101308.github.io/act","_self"); }
+          else {
+            window.open("https://8101308.github.io/noResults","_self");
+          }  }
+
+        function homeFunction() {
+          window.open("https://8101308.github.io/","_self");  }
+
+        function helpFunction() {
+          window.open("https://8101308.github.io/help","_self"); }
+
+        function logInFunction() {
+          window.open("https://8101308.github.io/log-in","_self"); }
+
+        function destinationsFunction() {
+            document.getElementById("myDropdown").classList.toggle("show"); }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        function actFunction() {
+          window.open("https://8101308.github.io/act","_self");
+        }
+
+        function nswFunction() {
+          window.open("https://8101308.github.io/nsw","_self");
+        }
+
+        function speacialsFunction() {
+          window.open("https://8101308.github.io/specials","_self");
+        }
+      </script>
