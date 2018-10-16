@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
 
-h1 {
-  color: blue;
+#head {
+  color: black;
+  font-size: 30px;
 }
 
-.NavLinks {
-  
+#deal {
+  font-size: 20px;
+}
+
+#NavLinks {
+
 }
