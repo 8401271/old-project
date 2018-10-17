@@ -3,6 +3,12 @@
     <head>
       <title>Kookaburrra Travel/Home</title>
       <link rel="stylesheet" type="text/css" href="home.CSS">
+      <ul id="NavLinks">
+        <li> <button type="button" id="Contact us">Contact us</button> </li>
+        <li> <button type="button" id="Sign up">Sign up</button> </li>
+        <li> <button type="button" id="Promotions">Promotions</button> </li>
+        <li> <button type="button" id="About us">About us</button> </li>
+      </ul>
     </head>
 
     <header>
@@ -10,11 +16,12 @@
     </header>
 
     <body>
-    <input type="text" id="SearchBar" onkeyup="SearchBar" placeholder="Search">
+      <div class="nav">
+    <input type="text" id="Search" onkeyup="searchfunction()" placeholder="Search">
 
-    <ul id="LocationsList">
+    <ul id="Locationlist">
       <!-- NSW Locations-->
-      <li><a href="#">Sydney</a></li>
+      <li><a href="file:///C:/Users/thoma/OneDrive/Documents/Code/GitHub/8401271.github.io/Destinations/Sydney/Sydney.html">Sydney</a></li>
       <li><a href="#">Newcastle</a></li>
       <li><a href="#">Bathurst</a></li>
         <!-- ACT Locations-->
@@ -35,18 +42,29 @@
       <li><a href="#">Hobart</a></li>
       <li><a href="#">Launceston</a></li>
     </ul>
+    <script>
+  function searchfunction() {
+    var input, filter, ul, li, a, i;
+     input = document.getElementById("Search");
+     filter = input.value.toUpperCase();
+     ul = document.getElementById("LocationList");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+       a = li[i].getElementsByTagName("a")[0];
+       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           li[i].style.display = "";
+       } else {
+           li[i].style.display = "none";
+         }
+       }
+     }
+    </script>
+  </div>
 
     </body>
 
-    <footer>
-      <ul id="NavLinks">
-        <li> <button type="button" id="Contact us">Contact us</button> </li>
-        <li> <button type="button" id="Sign up">Sign up</button> </li>
-        <li> <button type="button" id="Promotions">Promotions</button> </li>
-        <li> <button type="button" id="About us">About us</button> </li>
-      </ul>
+
       <script>
 
       </script>
-    </footer>
   </html>
