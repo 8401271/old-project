@@ -1,15 +1,28 @@
 @charset "UTF-8";
 
 
-#head {
+header {
   color: black;
   font-size: 30px;
+  background-color: red;
+  align-content: center;
+  align-self: center;
+  align-items: center;
 }
 
-#deal {
+.deal {
   font-size: 20px;
 }
 
 ul {
-display: inline;
+display: inline-block;
+}
+
+.grid-container {
+ display: grid;
+ grid-column-gap: 10px;
+ grid-row-gap: 10px;
+ grid-template-columns: 50%;
+ grid-template-rows: 50%;
+
 }

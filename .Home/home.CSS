@@ -9,12 +9,27 @@
 .NavLinks {
   display: inline-block;
   align-items: center;
+    font-size: 30px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    display: inline-block;
+
+}
+
+head {
+  background-color: #000;
 }
 
 ul {
   font-size: 30px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  display: inline-block;
 }
 
- p {
+ header {
   font-size: 30px;
+  font-family: sans-serif;
 }
