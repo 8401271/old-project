@@ -2,4 +2,19 @@
 
 .searchbar {
   background-color: red;
+  display: block;
+  align-items: left;
+}
+
+.NavLinks {
+  display: inline-block;
+  align-items: center;
+}
+
+ul {
+  font-size: 30px;
+}
+
+ p {
+  font-size: 30px;
 }
