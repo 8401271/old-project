@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+header {
+ font-size: 50px;
+ font-family: sans-serif;
+}
+
 .searchbar {
   background-color: red;
   display: block;
@@ -29,13 +34,9 @@ ul {
   display: inline-block;
 }
 
- header {
-  font-size: 30px;
-  font-family: sans-serif;
-}
 
 .grid-container {
   display: grid;
   grid-template-columns: 2 (1=30%, 2=70%);
-  
+
 }
