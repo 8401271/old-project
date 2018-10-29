@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+header {
+  font-size: 30px;
+ font-family: sans-serif;
+ text-align: center;
+ background-color: #ed0b0b
+}
+button {
+  font-size: 20px;
+}
+
+body {
+  background-color: #d8d8d8;
+}
+
+.NavLinks {
+  text-align: center;
+
+  }
+
+  .NavLinks li {
+  display: inline-block;
+  text-align: center;
+  font-size: 100px;
+  padding-right: 30px;
+}
+
+p {
+  margin-left: 200px;
+  Margin-right: 200px;
+}
+img {
+  margin-left: 550px;
+  Margin-right: 200px;
+}
