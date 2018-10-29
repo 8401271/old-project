@@ -1,16 +1,17 @@
 <!doctype.html>
   <html>
     <head>
+        <link rel="stylesheet" type="text/css" href=".Home\home.css"/>
       <title>Kookaburrra Travel/Home</title>
-      <link rel="stylesheet" type="text/css" href="home.CSS"/>
     </head>
 
     <header>
-      <ul id="NavLinks">
-        <li> <button type="button" id="Contact us">Contact us</button> </li>
-        <li> <button type="button" id="Sign up">Sign up</button> </li>
-        <li> <button type="button" id="Promotions">Promotions</button> </li>
-        <li> <button type="button" id="Aboutus">About us</button> </li>
+      <div class="Nav">
+      <ul class=NavLinks>
+        <li> <button type="button" id="Contact us">  Contact us  </button> </li>
+        <li> <button type="button" id="Sign up">  Sign up  </button> </li>
+        <li> <button type="button" id="Promotions">  Promotions  </button> </li>
+        <li> <button type="button" id="Aboutus">  About us  </button> </li>
       </ul>
       <script type="text/javascript">
         document.getElementById("Home").onclick = function () {
@@ -29,7 +30,8 @@
           location.href = "Nav Linked\About us\About.html";
         }
       </script>
-      <p>Travel placeholder</p>
+      </div>
+      <p>Kookaburra Travel</p>
     </header>
 
     <body>
@@ -38,6 +40,7 @@
       <div class="searchbar">
     <input type="text" id="Search" onkeyup="searchfunction()" placeholder="Search">
 
+    <div class="locationlist">
     <ul id="Locationlist">
       <!-- NSW Locations-->
       <li><a href="Destinations\Sydney\Sydney.html">Sydney</a></li>
@@ -61,7 +64,7 @@
       <li><a href="Destinations\Hobart\Hobart.html">Hobart</a></li>
       <li><a href="Destinations\Launceson\Launceston.html">Launceston</a></li>
     </ul>
-
+  </div>
     <script type="text/javascript">
   function searchfunction() {
     var input, filter, ul, li, a, i;
@@ -81,8 +84,9 @@
     </script>
   </div>
   <div class="map">
- <img "pictures\Map.png"/>
+ <img src="pictures\Map.png"/>
   </div>
+
 </div>
     </body>
 
